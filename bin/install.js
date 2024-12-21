@@ -7,7 +7,7 @@ const { execSync } = require('child_process');
 
 // URL of your component file
 const COMPONENT_URL =
-  'https://raw.githubusercontent.com/username/repository-name/main/src/index.js';
+  'https://raw.githubusercontent.com/Sarah-okolo/input-fields/refs/heads/main/src/index.js';
 
 // Destination for the component file
 const DESTINATION_PATH = path.join(process.cwd(), 'src/components/ui/input-fields.jsx');
@@ -15,10 +15,10 @@ const DESTINATION_PATH = path.join(process.cwd(), 'src/components/ui/input-field
 // Dependencies required for the component
 const REQUIRED_DEPENDENCIES = ['react-hook-form', 'lucide-react'];
 
-// Step 1: Create destination folder
+// Create destination folder
 fs.mkdirSync(path.dirname(DESTINATION_PATH), { recursive: true });
 
-// Step 2: Download the component file
+// Download the component file
 const downloadComponent = (url, destination) => {
   https.get(url, (response) => {
     if (response.statusCode === 200) {
@@ -27,10 +27,9 @@ const downloadComponent = (url, destination) => {
 
       file.on('finish', () => {
         file.close();
-        console.log('Component installed successfully at:', destination);
-
-        // Step 3: Install dependencies
+        // Install dependencies
         installDependencies();
+        console.log('Component installed successfully at:', destination);
       });
     } else {
       console.error(`Failed to download component: ${response.statusCode}`);
@@ -40,12 +39,10 @@ const downloadComponent = (url, destination) => {
   });
 };
 
-// Step 3: Install dependencies
+// Install dependencies
 const installDependencies = () => {
   try {
-    console.log('Installing dependencies...');
     execSync(`npm install ${REQUIRED_DEPENDENCIES.join(' ')}`, { stdio: 'inherit' });
-    console.log('Dependencies installed successfully.');
   } catch (error) {
     console.error('Error installing dependencies:', error.message);
   }
