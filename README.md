@@ -1,3 +1,4 @@
+# input-fields
 The **input-fields** component is a reusable React component for creating various form fields.
 
 It works by making use of props to structure your desired input field.
