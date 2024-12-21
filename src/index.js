@@ -25,7 +25,7 @@ function InputField(props) {
   useEffect(() => {
     if(depCompFile){
       // imports the specified dependency file
-      import(`./${depCompFile}`).then((mod) => {
+      import(/* @vite-ignore */ `./${depCompFile}`).then((mod) => {
         if (mod) setDepModule1(mod.default || mod);
       }).catch(() => {
         console.warn(`Error: Failed to resolve dependency file '${depCompFile}' for (${labelFor}[${type}]) field. Ensure the file name is correct and it exists in the (src/components/ui) folder.`);
@@ -34,7 +34,7 @@ function InputField(props) {
       // If the dependency file is a popover, then import the calendar component as well
       if (depCompFile.includes('popover')) {
         const calendarFile=`./calendar`;
-        import(calendarFile).then((mod) => {
+        import(/* @vite-ignore */ calendarFile).then((mod) => {
           if (mod) setDepModule2(mod.default || mod);
         }).catch(() => {
           console.warn(`Dependency for (${labelFor}[${type}]) not found: Ensure the Shadcn calendar component is present in the(src/components/ui) folder.`);
