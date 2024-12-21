@@ -1,6 +1,6 @@
 {
-  "name": "input-fields",
-  "version": "1.0.0",
+  "name": "custom-input-fields",
+  "version": "1.0.1",
   "bin": {
     "input-fields": "./install.js"
   },
@@ -11,5 +11,5 @@
   "keywords": ["input", "fields", "component", "UI"],
   "author": "Sarah-Okolo",
   "license": "ISC",
-  "description": "A reusable input fields component for projects"
+  "description": "A reusable and easily customizable form fields component for React projects"
 }
