@@ -1,6 +1,6 @@
 {
   "name": "custom-input-fields",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
     "custom-input-fields": "./install.js"
   },
