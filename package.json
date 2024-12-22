@@ -1,6 +1,6 @@
 {
   "name": "custom-input-fields",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "bin": {
     "custom-input-fields": "./install.js"
   },
@@ -15,6 +15,15 @@
     "UI"
   ],
   "author": "Sarah-Okolo",
+  "homepage": "https://hackmd.io/@wy0ll8IhQ-ycSIt4O8p7AQ/S1zkMGnNyx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sarah-okolo/custom-input-fields"
+  },
+  "bugs": {
+    "url": "https://github.com/Sarah-okolo/custom-input-fields/issues",
+    "email": "okolosarah402@gmail.com"
+  },
   "license": "ISC",
   "description": "A reusable and easily customizable form fields component for React Vite projects",
   "dependencies": {
