@@ -1,5 +1,5 @@
 # custom-input-fields
-The [**custom-input-fields**](https://www.npmjs.com/package/custom-input-fields) Nodejs package is used for creating various customizable input fields in a React Vite project.
+The [**custom-input-fields**](https://www.npmjs.com/package/custom-input-fields) Nodejs package is used for creating various customizable input fields in a **React Vite** project.
 
 It works by making use of props to structure your desired input field.
 
