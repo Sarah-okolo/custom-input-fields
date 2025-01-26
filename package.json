@@ -1,6 +1,6 @@
 {
   "name": "custom-input-fields",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "bin": {
     "custom-input-fields": "./install.js"
   },
@@ -29,5 +29,9 @@
   "dependencies": {
     "lucide-react": "^0.469.0",
     "react-hook-form": "^7.54.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "typescript": "^5.7.3"
   }
 }

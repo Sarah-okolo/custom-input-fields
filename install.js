@@ -7,13 +7,13 @@ const { execSync } = require('child_process');
 
 // URL of your component file
 const COMPONENT_URL =
-  'https://raw.githubusercontent.com/Sarah-okolo/input-fields/refs/heads/main/src/index.js';
+  'https://raw.githubusercontent.com/Sarah-okolo/input-fields/refs/heads/main/src/index.tsx';
 
 // Destination for the component file
-const DESTINATION_PATH = path.join(process.cwd(), 'src/components/ui/input-fields.jsx');
+const DESTINATION_PATH = path.join(process.cwd(), 'src/components/ui/input-fields.tsx');
 
 // Dependencies required for the component
-const REQUIRED_DEPENDENCIES = ['react-hook-form', 'lucide-react'];
+const REQUIRED_DEPENDENCIES = ['react-hook-form', 'lucide-react', 'date-fns'];
 
 // Create destination folder
 fs.mkdirSync(path.dirname(DESTINATION_PATH), { recursive: true });
