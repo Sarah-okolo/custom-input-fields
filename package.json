@@ -1,6 +1,6 @@
 {
   "name": "custom-input-fields",
-  "version": "1.0.6",
+  "version": "2.0.1",
   "bin": {
     "custom-input-fields": "./install.js"
   },
@@ -27,6 +27,7 @@
   "license": "ISC",
   "description": "A reusable and easily customizable form fields component for React Vite projects",
   "dependencies": {
+    "date-fns": "^4.1.0",
     "lucide-react": "^0.469.0",
     "react-hook-form": "^7.54.2"
   },
